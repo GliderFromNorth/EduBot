@@ -1,0 +1,29 @@
+{
+  "name": "edubot",
+  "version": "1.0.0",
+  "description": "BE Project (EduBot)",
+  "main": "index.js",
+  "engines": {
+    "node": "14.16.1",
+    "npm": "6.14.12"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "backend": "node index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GliderFromNorth/EduBot.git"
+  },
+  "author": "Saurav Jha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GliderFromNorth/EduBot/issues"
+  },
+  "homepage": "https://github.com/GliderFromNorth/EduBot#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
