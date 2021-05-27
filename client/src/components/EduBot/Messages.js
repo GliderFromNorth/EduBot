@@ -1,4 +1,12 @@
 import React from 'react';
+import Linkify from 'react-linkify';
+
+const componentDecorator = (href, text, key) => (
+    <a className="linkify__text" href={href} key={key} target="_blank" rel="noopener noreferrer">
+        {text}
+    </a>
+);
+
 
 const Message = (props) => {
     return (
@@ -13,7 +21,11 @@ const Message = (props) => {
                     }
                     <div className="col s10">
                       <span className="black-text">
-                        {props.text}
+                        {
+                            <Linkify componentDecorator={componentDecorator}>
+                                {props.text}
+                            </Linkify>
+                        }
                       </span>
                     </div>
                     {props.speaks==='me' &&
