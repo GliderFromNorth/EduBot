@@ -1,0 +1,34 @@
+{
+  "name": "sakec.agent.update.link.187",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "sakec.agent.update.link.187",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en-gb",
+          "speech":["https://www.shahandanchor.com/home/a-one-day-linux-workshop-for-teachers/"]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech":["https://www.shahandanchor.com/home/a-one-day-linux-workshop-for-teachers/"]
+        },
+        
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1529433327,
+  "fallbackIntent": false,
+  "events": []
+}

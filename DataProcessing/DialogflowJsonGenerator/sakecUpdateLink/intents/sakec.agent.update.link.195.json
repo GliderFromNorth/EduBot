@@ -1,0 +1,34 @@
+{
+  "name": "sakec.agent.update.link.195",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "sakec.agent.update.link.195",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en-gb",
+          "speech":["https://www.shahandanchor.com/home/iste-arduino-for-beginners/"]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "speech":["https://www.shahandanchor.com/home/iste-arduino-for-beginners/"]
+        },
+        
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1529433327,
+  "fallbackIntent": false,
+  "events": []
+}

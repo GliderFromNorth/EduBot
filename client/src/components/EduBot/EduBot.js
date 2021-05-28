@@ -164,9 +164,9 @@ class EduBot extends Component{
     render() {
         if (this.state.showBot) {
             return (
-                <div style={{ minHeight: 500, maxHeight: 500, width:400, position: 'absolute', bottom: 0, right: 0, border: '1px solid lightgray'}}>
+                <div style={{backgroundColor:'#808080', minHeight: 500, maxHeight: 500, width:400, position: 'absolute', bottom: 0, right: 0, border: '1px solid lightgray'}}>
                     <nav>
-                        <div className="nav-wrapper">
+                        <div className="nav-wrapper" style={{backgroundColor:'#436091'}}>
                             <a href="/" className="brand-logo">EduBot</a>
                             <ul id="nav-mobile" className="right hide-on-med-and-down">
                                 <li><a href="/" onClick={this.hide}>Close</a></li>
@@ -178,11 +178,11 @@ class EduBot extends Component{
 
                         {this.renderMessages(this.state.messages)}
                         <div ref={(el) => { this.messagesEnd = el; }}
-                             style={{ float:"left", clear: "both" }}>
+                        style={{ float:"left", clear: "both" }}>
                         </div>
                     </div>
                     <div className=" col s12" >
-                        <input style={{margin: 0, paddingLeft: '1%', paddingRight: '1%', width: '98%'}} ref={(input) => { this.talkInput = input; }} placeholder="Type your Query..."  onKeyPress={this._handleInputKeyPress} id="user_says" type="text" />
+                        <input style={{margin: 0, paddingLeft: '1%', paddingRight: '1%', width: '98%', backgroundColor:'#436091', fontWeight:'1000'}} ref={(input) => { this.talkInput = input; }} placeholder="Type your Query..."  onKeyPress={this._handleInputKeyPress} id="user_says" type="text" />
                     </div>
 
                 </div>
@@ -191,7 +191,7 @@ class EduBot extends Component{
             return (
                 <div style={{ minHeight: 40, maxHeight: 500, width:400, position: 'absolute', bottom: 0, right: 0, border: '1px solid lightgray'}}>
                     <nav>
-                        <div className="nav-wrapper">
+                        <div className="nav-wrapper" style={{backgroundColor:'#436091'}} >
                             <a href="/" className="brand-logo">EduBot</a>
                             <ul id="nav-mobile" className="right hide-on-med-and-down">
                                 <li><a href="/" onClick={this.show}>Show</a></li>
